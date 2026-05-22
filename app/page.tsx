@@ -1,27 +1,29 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="flex h-screen flex-col overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-100 dark:from-zinc-900 dark:to-zinc-800">
       <header className="flex items-center justify-end gap-6 px-8 py-6">
         <nav className="flex items-center gap-6">
-          <a
+          <Link
             href="/como-funciona"
             className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
           >
             Como funciona
-          </a>
-          <a
+          </Link>
+          <Link
             href="/sobre"
             className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
           >
             Sobre
-          </a>
+          </Link>
         </nav>
-        <a
+        <Link
           href="/apoie"
           className="rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-emerald-700 hover:shadow-lg"
         >
           Apoie
-        </a>
+        </Link>
       </header>
 
       <main className="flex flex-1 flex-col items-center justify-center px-6">
@@ -33,7 +35,7 @@ export default function Home() {
             Toda eleição é a mesma coisa: promessas grandiosas, discursos fortes e pouca clareza sobre o que realmente foi feito. Em um cenário de crescente desconfiança na política, votar de forma consciente nunca foi tão importante. Descubra quais deputados e senadores mais estiveram alinhados com aquilo que você acredita nos últimos 4 anos.
           </p>
 
-          <a
+          <Link
             href="/quiz"
             className="mt-10 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-emerald-700 hover:shadow-xl hover:scale-105"
           >
@@ -52,7 +54,7 @@ export default function Home() {
                 d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </main>
     </div>
