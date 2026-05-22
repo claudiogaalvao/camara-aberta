@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Quem Me Representa",
+  title: "Quem Me Representa?",
   description:
     "Descubra quais deputados estão mais alinhados aos seus interesses na Câmara dos Deputados e no Senado.",
 };

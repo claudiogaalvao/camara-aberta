@@ -2,7 +2,13 @@ export default function Home() {
   return (
     <div className="flex h-screen flex-col overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-100 dark:from-zinc-900 dark:to-zinc-800">
       <header className="flex items-center justify-end gap-6 px-8 py-6">
-        <nav>
+        <nav className="flex items-center gap-6">
+          <a
+            href="/como-funciona"
+            className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+          >
+            Como funciona
+          </a>
           <a
             href="/sobre"
             className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
@@ -21,7 +27,7 @@ export default function Home() {
       <main className="flex flex-1 flex-col items-center justify-center px-6">
         <div className="max-w-3xl text-center">
           <h1 className="mb-6 text-5xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-6xl md:text-7xl">
-            Quem me representa
+            Quem me representa?
           </h1>
           <p className="text-lg leading-relaxed text-zinc-600 dark:text-zinc-300 sm:text-xl">
             Toda eleição é a mesma coisa: promessas grandiosas, discursos fortes e pouca clareza sobre o que realmente foi feito. Em um cenário de crescente desconfiança na política, votar de forma consciente nunca foi tão importante. Descubra quais deputados e senadores mais estiveram alinhados com aquilo que você acredita nos últimos 4 anos.
